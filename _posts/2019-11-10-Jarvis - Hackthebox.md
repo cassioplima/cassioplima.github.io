@@ -15,4 +15,6 @@ pinned: true
 ## Penetration Methodologies
 
 ### Scanning
-        *nmap
+        - nmap
+### enumeration
+        - HTTP server enum
