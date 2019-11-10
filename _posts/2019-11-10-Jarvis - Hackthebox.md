@@ -61,6 +61,11 @@ ________________________________________________________________________________
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2003-15-33.png)
 
+#### with a little search in the page, I found a suspect link and decided to try to force SQL with a single quote and received a weird result...
+
+![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/quartos.png)
+
+
 #### I've used the dirb to enumerate directories, but dirbuster and gobuster would work too. We see that the dirb found some pages, that's good. But the page what we interested to is `/phpmyadmin`
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2002-19-10.png)
