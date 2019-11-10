@@ -53,5 +53,11 @@ No exact OS matches for host (If you know what OS is running on it, see https://
 TCP/IP fingerprint:
 
 ```
+______________________________________________________________________________________________________________________________
 
+## Enumeration
+
+### I've used the dirb to enumerate directories, but dirbuster and gobuster would work too. We see that the dirb found some pages, that's good. But the page what we interested to is `/phpmyadmin`
+
+![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2002-19-10.png)
 
