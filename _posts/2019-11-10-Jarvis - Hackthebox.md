@@ -16,5 +16,5 @@ pinned: true
 
 ### Scanning
     * nmap       
-### enumeration
+### Enumeration
     * Browsing HTTP server
