@@ -21,3 +21,4 @@ pinned: true
 ### Enumeration
 
 * _Browsing HTTP server_
+* _Directory Scanning using dirbuster_
