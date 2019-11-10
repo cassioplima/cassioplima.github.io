@@ -14,7 +14,7 @@ pinned: true
 
 ## Penetration Methodologies
 
-### Scanning
-    * nmap       
-### Enumeration
-    * Browsing HTTP server
+### scanning
+       - nmap       
+### enumeration
+       - Browsing HTTP server
