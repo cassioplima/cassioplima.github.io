@@ -116,7 +116,13 @@ database management system users password hashes:
     clear-text password: imissyou
 ```
 
+#### User and password found: (DBadmin: imissyou), Let's try login in PHPMyAdmin
 
+______________________________________________________________________________________________________________________________
 
+## EXPLOITATION
 
+   * **User**
+   
+   
 
