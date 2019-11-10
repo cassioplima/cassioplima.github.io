@@ -367,6 +367,29 @@ ________________________________________________________________________________
 ### PRIVILEGE SCALATION
 
    > ROOT
+   
+#### Looking for setuid
+``find / -perm -4000 2>/dev/null  ``
+
+```
+pepper@jarvis:/$ find / -perm -4000 2>/dev/null     
+find / -perm -4000 2>/dev/null
+/bin/fusermount
+/bin/mount
+/bin/ping
+/bin/systemctl
+/bin/umount
+/bin/su
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/gpasswd
+/usr/bin/chsh
+/usr/bin/sudo
+/usr/bin/chfn
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+```
 
 
 
