@@ -354,6 +354,14 @@ pepper@jarvis:/var/www/Admin-Utilities$ whoami
 whoami
 pepper@jarvis:/var/www/Admin-Utilities$ 
 ```
+#### So i made nc shell again this time it worked; got user!!
+
+```
+pepper@jarvis:~$ cat user.txt
+cat user.txt
+2afa36c4f05b37b34259c93551f5c44f
+pepper@jarvis:~$ 
+```
 
 
 
