@@ -4,4 +4,4 @@ title: About me
 permalink: /about/
 ---
 
-![](https://www.hackthebox.eu/badge/76106)
+![](https://www.hackthebox.eu/badge/image/76106)
