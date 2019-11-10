@@ -7,7 +7,7 @@
 # 井号后面的文字是说明文档，不会被程序读取。
 name: LOFFER
 # 描述/签名
-description: 一个可以fork的博客
+description: This is page of Dark0
 
 #
 # 下面的设定都是可选的
@@ -56,7 +56,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # 站点页脚的文字
-footer-text: Copyright (c) 2019 来自中世界
+footer-text: Copyright (c) 2019 
 
 # 评论，注意，请不要同时添加多种不同的评论区
 
@@ -79,7 +79,7 @@ url:
 # 添加你的博客的二级域名，一般来说是你的repository名
 # 如果你的博客的URL是：(http://yourusername.github.io/repository-name)
 # 那么就写成 "/repository-name"
-baseurl: /LOFFER
+baseurl: /
 
 
 #
