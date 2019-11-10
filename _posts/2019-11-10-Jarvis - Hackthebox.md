@@ -21,7 +21,7 @@ pinned: true
 ### Enumeration
 
 + _Browsing HTTP server_
-+ _Directory Scanning using dirbuster_
++ _Directory Scanning using dirb_
 
 _____________________________________________________________________________________________________________________________
 
