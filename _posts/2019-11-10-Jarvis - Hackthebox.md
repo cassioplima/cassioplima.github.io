@@ -127,6 +127,8 @@ ________________________________________________________________________________
 #### We've access to the PHPMyAdmin. Now, we'll put a shell in server to get RCE. To that, we should go to "New" and after "SQL"
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/phpmyadmin.png)
+
+#### This code will create one archive with the name "shell.php" inside the directory "/var/www/html"
    
    
 
