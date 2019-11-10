@@ -120,7 +120,7 @@ ________________________________________________________________________________
 
 ## EXPLOITATION
 
-### USER
+   > USER
 
 #### We've access to the PHPMyAdmin. Now, we'll put a shell in server to get RCE. To that, we should go to "New" and after "SQL"
 
