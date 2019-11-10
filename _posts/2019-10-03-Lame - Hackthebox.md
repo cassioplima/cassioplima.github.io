@@ -4,7 +4,6 @@ title: Lame - Hackthebox
 date: 2019-10-03
 Author: Dark0
 tags: [sample, document]
-comments: true
 toc: 
 pinned: true
 ---
