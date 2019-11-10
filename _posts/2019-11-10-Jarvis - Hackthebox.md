@@ -144,3 +144,18 @@ ________________________________________________________________________________
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/shell.png)
 
+#### When we use ``sudo -l``, we see a script running as user pepper
+
+``(pepper : ALL) NOPASSWD: /var/www/Admin-Utilities/simpler.py``
+
+```
+www-data@jarvis:/var/www/html$ sudo -l     
+sudo -l
+Matching Defaults entries for www-data on jarvis:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User www-data may run the following commands on jarvis:
+    (pepper : ALL) NOPASSWD: /var/www/Admin-Utilities/simpler.py
+www-data@jarvis:/var/www/html$ 
+```
