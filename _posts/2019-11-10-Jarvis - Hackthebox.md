@@ -12,4 +12,4 @@ pinned: true
 
 ### Hello guys! Welcome to yet another from hackthebox walkthrough. The new box retired is Jarvis, so we'll solve it. Jarvis is a box classified a medium level. With Jarvis we learn some skills related to the sqli and binary setuid exploit. Ok, let's go
 
-
+## Penetration Methodologies
