@@ -313,7 +313,7 @@ if __name__ == '__main__':
         exit()
 ```
 
-### The exec_ping function is interesting because it doesn't check $ then you can execute commands by passing $ (command)
+#### The exec_ping function is interesting because it doesn't check "$". Then you can execute commands by passing $(command)
 
 ```
 def exec_ping():
