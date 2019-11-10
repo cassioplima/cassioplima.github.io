@@ -14,24 +14,24 @@ pinned: true
 
 ## Penetration Methodologies
 
-### Scanning
+* **Scanning**
 
-+ _nmap_
+   + _nmap_
        
-### Enumeration
+* **Enumeration**
 
-+ _Browsing HTTP server_
-+ _Directory Scanning using dirb_
-+ _Get creds with SQLi_
-+ _shell phpmyadmin_
+   + _Browsing HTTP server_
+   + _Directory Scanning using dirb_
+   + _Getting creds with SQLi_
 
-### Exploitation
+* **Exploitation**
 
-* **User**
+  * **User**
 
+   + _shell phpmyadmin_
    + _Command injection_
 
-* **Root**
+  * **Root**
    
    + _SETUID binarie_   
 _____________________________________________________________________________________________________________________________
@@ -80,6 +80,8 @@ ________________________________________________________________________________
 #### I've used the dirb to enumerate directories, but dirbuster and gobuster would work too. We see that the dirb found some pages, that's good. But the page what we interested to is `/phpmyadmin`
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2002-19-10.png)
+
+##
 
 
 
