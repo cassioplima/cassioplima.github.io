@@ -57,7 +57,16 @@ ________________________________________________________________________________
 
 ## Enumeration
 
+#### Good, port 80 we get it web page, looks like a page of the hotel, maybe if we'll browse in the page we'll find something interesting
+
+![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2003-15-33.png)
+
 #### I've used the dirb to enumerate directories, but dirbuster and gobuster would work too. We see that the dirb found some pages, that's good. But the page what we interested to is `/phpmyadmin`
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2002-19-10.png)
+
+
+
+
+
 
