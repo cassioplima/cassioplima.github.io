@@ -16,12 +16,12 @@ pinned: true
 
 ### Scanning
 
-* _nmap_
++ _nmap_
        
 ### Enumeration
 
-* _Browsing HTTP server_
-* _Directory Scanning using dirbuster_
++ _Browsing HTTP server_
++ _Directory Scanning using dirbuster_
 
 _____________________________________________________________________________________________________________________________
 
