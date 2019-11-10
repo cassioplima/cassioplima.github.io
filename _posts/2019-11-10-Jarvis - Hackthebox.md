@@ -27,7 +27,7 @@ pinned: true
 
 ## Scanning
 
-#### To start I just did it first scan with the nmap
+#### To start I just did it first scan with the nmap, we found two ports, 22 to ssh, and 80 to web service. Good, here we go
 
 ```
 ┌─[root@parrot]─[~]
@@ -53,3 +53,5 @@ No exact OS matches for host (If you know what OS is running on it, see https://
 TCP/IP fingerprint:
 
 ```
+
+
