@@ -22,7 +22,18 @@ pinned: true
 
 + _Browsing HTTP server_
 + _Directory Scanning using dirb_
++ _Get creds with SQLi_
++ _shell phpmyadmin_
 
+### Exploitation
+
+* **User**
+
+   + _Command injection_
+
+* **Root**
+   
+   + _SETUID binarie_   
 _____________________________________________________________________________________________________________________________
 
 ## Scanning
