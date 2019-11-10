@@ -31,12 +31,12 @@ pinned: true
 
   * **Root**
    
-   + _SETUID binarie_   
+   + _SETUID binary_   
 _____________________________________________________________________________________________________________________________
 
 ## Scanning
 
-#### To start I just did it first scan with the nmap, we found two ports, 22 to ssh, and 80 to web service. Good, here we go
+#### To begin with, I've done the first scan with the nmap, we found two ports: 22 to ssh and 80 to web service. Good, here we go.
 
 ```
 ┌─[root@parrot]─[~]
